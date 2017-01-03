@@ -11,7 +11,7 @@ MQTT Demo
 ## Run Broker
 
 ```bash
-    $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto
+    $ docker run --rm -ti -p 1883:1883 -p 9001:8080 -e "DOCKER_VERNEMQ_ALLOW_ANONYMOUS=on" erlio/docker-vernemq
 ```
 
 ## Run Fake Sensor Java
