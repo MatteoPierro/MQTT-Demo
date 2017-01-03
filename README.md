@@ -1,6 +1,13 @@
 MQTT Demo
 ================
 
+## Requirements
+
+ * Java 1.7 and later
+ * Maven 3.3.9 and later
+ * Docker 1.12.5 and later 
+ * Web Browser that supports websocket 
+
 ## Run Broker
 
 ```bash
@@ -33,7 +40,7 @@ MQTT Demo
 
 ## Run Temperature Web Monitor
 
-Open `web-gui-websocket/index.html` with a web browser that supports wedsockets (eg Google Chrome).
+Open `web-gui-websocket/index.html` within a web browser that supports websockets (eg Google Chrome).
 
 ## References and Kudos
 
