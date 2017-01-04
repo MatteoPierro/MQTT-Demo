@@ -12,6 +12,8 @@ public class LoggerSubscriber {
 
         MqttClient sampleClient = new MqttClient(BROKER, CLIENT_ID);
         MqttConnectOptions connOpts = new MqttConnectOptions();
+        connOpts.setUserName("logger-java");
+        connOpts.setPassword("logger-java".toCharArray());
         connOpts.setCleanSession(false);
 
         System.out.println("Connecting to broker: "+BROKER);

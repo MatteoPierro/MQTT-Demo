@@ -4,8 +4,8 @@ host = '127.0.0.1';	// hostname or IP address
 port = 9001;
 topic = 'home/room1/temperature';		// topic to subscribe to
 useTLS = false;
-username = null;
-password = null;
+username = 'web-gui';
+password = 'web-gui';
 // username = "jjolie";
 // password = "aa";
 

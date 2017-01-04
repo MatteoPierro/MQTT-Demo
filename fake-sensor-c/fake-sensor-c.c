@@ -18,6 +18,8 @@ int main(int argc, char* argv[])
 
     MQTTClient_create(&client, ADDRESS, CLIENTID,
         MQTTCLIENT_PERSISTENCE_NONE, NULL);
+    conn_opts.username = "sensor-c";
+    conn_opts.password = "sensor-c";
     conn_opts.keepAliveInterval = 20;
     conn_opts.cleansession = 1;
 

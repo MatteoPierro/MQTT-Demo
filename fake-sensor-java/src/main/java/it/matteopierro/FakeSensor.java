@@ -13,6 +13,8 @@ public class FakeSensor {
 
         MqttClient client = new MqttClient(BROKER, CLIENT_ID);
         MqttConnectOptions connOpts = new MqttConnectOptions();
+        connOpts.setUserName("sensor-java");
+        connOpts.setPassword("sensor-java".toCharArray());
         connOpts.setCleanSession(false);
 
         System.out.println("Connecting to broker: "+BROKER);
