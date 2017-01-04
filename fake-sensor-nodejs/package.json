@@ -1,0 +1,16 @@
+{
+  "name": "fake-sensor-nodejs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node index.js"
+  },
+  "author": "Ivo von Putzer Reibegg <ivo.putzer@gmail.com> (https://github.com/ivoputzer)",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^2.1.3"
+  }
+}
