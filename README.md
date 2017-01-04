@@ -5,8 +5,9 @@ MQTT Demo
 
  * Java 1.7 and later
  * Maven 3.3.9 and later
- * Docker 1.12.5 and later 
- * Web Browser that supports websocket 
+ * Docker 1.12.5 and later
+ * NodeJs 6 and later
+ * Web Browser that supports websocket
 
 ## Run Broker
 
@@ -20,7 +21,7 @@ MQTT Demo
 	$ cd fake-sensor-java   
 	$ mvn compile
 	$ mvn exec:java
-```	
+```
 
 ## Run Fake Sensor C
 
@@ -28,7 +29,15 @@ MQTT Demo
 	$ cd fake-sensor-c   
 	$ docker build -t fake-sensor-c .
 	$ docker run --rm -it --net=host fake-sensor-c ./fake-sensor-c
-```	
+```
+
+## Run Fake Sensor NodeJS
+
+```bash
+	$ cd fake-sensor-nodejs
+  $ npm install
+	$ npm start -- <username> <password>
+```
 
 ## Run Logger Subscriber Java
 
@@ -36,7 +45,7 @@ MQTT Demo
 	$ cd logger-subscriber-java   
 	$ mvn compile
 	$ mvn exec:java
-```	
+```
 
 ## Run Temperature Web Monitor
 
